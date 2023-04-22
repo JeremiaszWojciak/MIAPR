@@ -79,7 +79,6 @@ class RRT(GridMap):
         self.parent[self.start] = None
 
         while True:
-            # time.sleep(1)
             random_pt = self.random_point()
             closest_pt = self.find_closest(random_pt)
             new_pt = self.new_pt(random_pt, closest_pt)
